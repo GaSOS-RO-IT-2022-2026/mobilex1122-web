@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        div {
+            background-color: black;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        .box1 {
+            background-color: black;
+            left: 20px;
+            top: 20px;
+            z-index: 20;
+            pointer-events: all;
+        }
+         .box2 {
+	        background-color: green;
+	        left: 20px;
+	        top: 83px;
+	        transform: perspective(1000px) rotateX(86deg) scale(0.9) scaleY(-5.9) scaleX(-1.5);
+        }
+        .box3 {
+	        background-color: rgb(128, 30, 0);
+	        left: 84px;
+	        top: 20px;
+	        transform: perspective(1000px) rotateY(-86deg) scale(0.9) scaleX(-5.9) scaleY(-1.4);
+        }
+    </style>
+
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+</html>
