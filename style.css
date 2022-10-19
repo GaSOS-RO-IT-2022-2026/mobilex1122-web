@@ -27,6 +27,12 @@ a.but {
     overflow: hidden;
 }
 
+a.but:hover {
+    transform: scale(1.2) perspective(500px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.473) 5px 5px 10px);
+    background-color: #ff7d01;
+}
+
 
 a.imbut {
     margin-left: 30px;
@@ -49,11 +55,7 @@ img {
 }
 
 
-a.but:hover {
-    transform: scale(1.2) perspective(500px);
-    filter: drop-shadow(rgba(0, 0, 0, 0.473) 5px 5px 10px);
-    background-color: #ff7d01;
-}
+
 
 
 

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: black;
+        }
+        .loading {
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-name: rotate;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+        }
+
+        @keyframes rotate {
+            0% {transform: translate(-50%, -50%) rotate(0turn);}
+            80% {transform: translate(-50%, -50%) rotate(1turn);}
+            100% {transform: translate(-50%, -50%) rotate(1turn);}
+        }
+
+        .loading div {
+            background-color: rgb(255, 0, 0);
+            opacity: 0.5;
+            margin: 60px;
+            transform: rotate(0turn);
+            width: 2px;
+            height: 2px;
+            animation-name: move;
+            animation-delay: 4s;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease;
+            filter: hue-rotate(0deg);
+        }
+
+
+        .loading .ball {
+            background-color: rgb(255, 0, 0);
+            opacity: 0.5;
+            border-radius: 50px;
+            transform: translateY(100px);
+            width: 20px;
+            height: 20px;
+            animation-name: none;
+        }
+
+
+        @keyframes move {
+            0% {
+                background-color: red;
+                margin: 60px;
+                transform: rotate(0turn);
+                width: 2px;
+            }
+            50% {
+                background-color: white;
+                margin: 100px;
+                width: 100px;
+                height: 2px;
+            }
+            100% {
+                background-color: red;
+                margin: 60px;
+                transform: rotate(1turn);
+                width: 2px;
+            }
+        }
+
+    </style>
+
+
+
+
+
+    <div class="loading" style="animation-delay: 0ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 100ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 200ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 300ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 400ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 500ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 600ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 700ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 800ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+    <div class="loading" style="animation-delay: 900ms;">
+        <div class="p1">
+        </div>
+        <div class="p2">
+        </div>
+        <div class="p3"></div>
+        <div class="p4"></div>
+    </div>
+</body>
+</html>

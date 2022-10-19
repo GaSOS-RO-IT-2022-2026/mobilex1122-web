@@ -1,0 +1,44 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-color: #000;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+div {
+    background-color: rgba(0, 0, 0, 0.74);
+    background-image: url("noise.png");
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    color: white;
+}
+
+
+a.button {
+    position: relative;
+    padding: 10px 20px;
+    margin: 40px;
+    border-radius: 10px;
+    font-size: small;
+    background-color: #0078de;
+    box-shadow: black 0px 0px 5px;
+    transition: 500ms;
+}
+
+
+a.button:hover {
+
+    background-color: #0088ff;
+    box-shadow: #0078de 0px 0px 5px;
+
+}
+
+div.center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
