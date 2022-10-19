@@ -5,11 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    <a class="but" href="roky.html">Gasos-ro</a><br><br>
-    <a class="but" href="rozcesti.html">Rozcestník</a><br><br>
-    <a class="but" href="loading.html">Loading</a><br><br>
-    <a class="but" href="css-balls.html">css Ball</a><br><br>
+    <style>
+        body {
+            background-color: rgb(51, 51, 51);
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: calc(100vh - 30px);
+            margin: 0;
+            padding: 0;
+        }
+
+
+        div.panel {
+            background-color: rgb(61, 61, 61);
+            height: 30px;
+            text-align: center;
+            transition: 400ms;
+            transition-delay: 4s;
+            width: 100%;
+            margin-bottom: 0px;
+        }
+
+
+        button {
+            height: 25px;
+            margin: 5px 0px;
+            margin-bottom: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            background-color: white;
+            border: none;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            box-shadow: inset rgba(0, 0, 0, 0.404) 0px 4px 4px;
+            transition: 400ms;
+        }
+
+        button:hover {
+            color: white;
+            background-color: red;
+            height: 25px;
+            margin: 2.5px 0px;
+        }
+
+        button.select {
+            background-color: rgb(196, 72, 0);
+            color: white;
+            height: 25px;
+            margin: 2.5px 0px;
+        }
+
+    </style>
+
+
+    <div class="panel">
+        <button id="bt1" onclick="load('roky.html',1)" class="select ">Gasos-ro <a href="roky.html" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a></button>
+        <button id="bt2" onclick="load('rozcesti.html', 2)">Rozcestník <a href="rozcesti.html" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a></button>
+        <button id="bt3" onclick="load('loading.html', 3)">Loading <a href="loading.html" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a></button>
+        <button id="bt4" onclick="load('css-balls.html', 4)">Css ball <a href="css-balls.html" target="_blank"><span class="glyphicon glyphicon-new-window"></span></a></button>
+    </div>
+    
+    <iframe id="main" src="roky.html" frameborder="0" width="100%" height="100%"></iframe>
+
+
+    <script>
+        lastsel = 1
+        tabmode = false
+        function load(url,sel) {
+
+if (!tabmode) {
+    document.getElementById('main').src = url;
+
+    document.getElementById('bt'+ String(lastsel)).classList.toggle("select");
+                document.getElementById('bt'+ String(sel)).classList.toggle("select");
+                lastsel = sel
+            }
+
+            if (tabmode) {
+                window.open(url, '_blank').focus();
+            }
+        }
+        function changemode(status) {
+            document.getElementById('bt0').classList.toggle("on");
+            tabmode = !tabmode
+        }
+    </script>
 </body>
 </html>
