@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zvířata</title>
+    <link rel="stylesheet" href="css/zvirata.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cat dominance</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#dominance">Dominance</a>
+              <a class="nav-link" href="#roztomilost">Roztomilost</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <br><br><br>
+    <style>
+        .target:target {
+            animation-name: target;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+        }
+        @keyframes target {
+            0% {
+                background-color: rgba(0, 0, 255, 0);
+            }
+            40% {
+                background-color: rgba(0, 0, 255, 0.356);
+            }
+            50% {
+                background-color: rgba(0, 0, 255, 0.356);
+            }
+            100% {
+                background-color: rgba(0, 0, 255, 0);
+            }
+
+        }
+    </style>
+    <div class="container">
+        <div class="row">
+          <div class="col-md">
+            <h1>
+                Kočka
+            </h1>
+                <div class="card">
+                <img src="cat1.jpg" class="card-img-top" alt="">
+                <div class="card-body target"id="dominance">
+                    <h5 class="card-title" >Dominance</h5>
+                    <p class="card-text">Kočka je dominantní nad <b>VŠÍM</b></p>
+                </div>
+                </div>
+                <br><br>
+                <div class="card">
+                    <img src="cat2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body target" id="roztomilost">
+                    <h5 class="card-title">Roztomilost</h5>
+                    <p class="card-text">Kočka láká kořist svojí roztomilostní. <br> <b class="text-danger">Pozor: Josu až moc roztomilé</b></p>
+                    </div>
+                </div>
+          </div>
+          <div class="col-md-2">
+            Column
+          </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

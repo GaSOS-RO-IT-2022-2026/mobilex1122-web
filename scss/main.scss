@@ -1,0 +1,74 @@
+
+@import "../bootstrap/scss/functions";
+@import "../bootstrap/scss/variables";
+
+.hover-card:hover {
+    filter: brightness(0.9);
+}
+
+.nocolabse {
+    transition: 0ms;
+}
+
+.collapsing.nocolabse {
+    -webkit-transition: none;
+    transition: none;
+    display: none;
+
+}
+
+
+$custom-theme: (
+    "dark-red": #910000,
+    "dark-blue": #000061,
+    "grey": #b4b4b4,
+
+
+    "soc-twitter": 	#1DA1F2,
+    "soc-buycoff": #ffd200
+);
+
+* {
+    scroll-padding-top: 5rem
+}
+
+
+
+
+$theme-colors: map-merge($theme-colors, $custom-theme);
+
+
+$popover-font-size:                 $font-size-sm;
+$popover-bg:                        $dark;
+$popover-max-width:                 276px;
+$popover-border-width:              $border-width;
+$popover-border-color:              $red;
+$popover-border-radius:             $border-radius-lg;
+$popover-inner-border-radius:       subtract($popover-border-radius, $popover-border-width);
+$popover-box-shadow:                $box-shadow;
+
+$popover-header-font-size:          $font-size-base;
+$popover-header-bg:                 map-get($theme-colors,"dark-red");
+$popover-header-color:              $light;
+$popover-header-padding-y:          .5rem;
+$popover-header-padding-x:          $spacer;
+
+$popover-body-color:                $light;
+$popover-body-padding-y:            $spacer;
+$popover-body-padding-x:            $spacer;
+
+$popover-arrow-width:               1rem;
+$popover-arrow-height:              .5rem;
+
+
+
+
+$enable-shadows: true;
+$navbar-toggler-padding-y: .25rem;
+$navbar-toggler-padding-x: .25rem;
+
+    
+
+
+
+@import "../bootstrap/scss/bootstrap";
